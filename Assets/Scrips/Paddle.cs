@@ -16,6 +16,6 @@ public class Paddle : MonoBehaviour {
 
 		paddlePos.x = Mathf.Clamp (mousePositionInBlocks, -7.5f, 7.5f);
 		this.transform.position = paddlePos;
-		Debug.Log (mousePositionInBlocks);
+		//Debug.Log (mousePositionInBlocks);
 	}
 }
