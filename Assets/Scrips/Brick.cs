@@ -4,6 +4,7 @@ using System.Collections;
 public class Brick : MonoBehaviour {
 
 	public int maxHits;
+	public Sprite[] hitSprites;
 
 	private int timesHit;
 	private LevelManager levelManager;
@@ -24,7 +25,14 @@ public class Brick : MonoBehaviour {
 
 		if (timesHit >= maxHits) {
 			GameObject.Destroy (gameObject, 0.1f);
+		} else {
+			LoadSprites ();
 		}
+	}
+
+	void LoadSprites () {
+		int spriteIndex = timesHit - 1;
+		this.GetComponent<SpriteRenderer> ().sprite = hitSprites [spriteIndex];
 	}
 
 	// TODO remove this when the bricks can be broken
