@@ -12,7 +12,7 @@ GameObject:
   - 61: {fileID: 6142126}
   - 114: {fileID: 11455798}
   m_Layer: 0
-  m_Name: 1 hit
+  m_Name: brick_yellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,7 +55,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 429d6891900dd81458e6ce2d61d3b8b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHits: 1
+  hitSprites: []
 --- !u!212 &21236510
 SpriteRenderer:
   m_ObjectHideFlags: 1
