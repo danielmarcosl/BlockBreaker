@@ -21,8 +21,10 @@ public class Brick : MonoBehaviour {
 
 	void OnCollisionEnter2D (Collision2D col) {
 		timesHit += 1;
-		SimulateWin ();
-		//Debug.Log (timesHit);
+
+		if (timesHit >= maxHits) {
+			GameObject.Destroy (gameObject, 0.1f);
+		}
 	}
 
 	// TODO remove this when the bricks can be broken
