@@ -34,9 +34,4 @@ public class Brick : MonoBehaviour {
 		int spriteIndex = timesHit - 1;
 		this.GetComponent<SpriteRenderer> ().sprite = hitSprites [spriteIndex];
 	}
-
-	// TODO remove this when the bricks can be broken
-	void SimulateWin () {
-		levelManager.LoadNextLevel ();
-	}
 }
