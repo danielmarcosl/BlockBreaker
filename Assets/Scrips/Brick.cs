@@ -20,6 +20,14 @@ public class Brick : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D (Collision2D col) {
+		bool isBreakable = (this.tag == "Breakable");
+
+		if (isBreakable) {
+			HandleHits ();
+		}
+	}
+
+	void HandleHits () {
 		timesHit += 1;
 
 		int maxHits = hitSprites.Length + 1;
