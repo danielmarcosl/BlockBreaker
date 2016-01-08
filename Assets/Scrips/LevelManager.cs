@@ -9,9 +9,15 @@ public class LevelManager : MonoBehaviour {
 		SceneManager.LoadScene (name);
 	}
 
-	public void LoadNextLevel() {
+	public void LoadNextLevel () {
 		//Debug.Log (SceneManager.GetActiveScene().buildIndex);
 		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
+	}
+
+	public void BrickDestroyed () {
+		if (Brick.breakableCount <= 0) {
+			LoadNextLevel ();
+		}
 	}
 
 	public void QuitRequest () {
