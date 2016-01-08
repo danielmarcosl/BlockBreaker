@@ -10,8 +10,6 @@ public class LoseCollider : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D (Collider2D trigger) {
-		Debug.Log ("Trigger");
-
 		levelManager.LoadLevel ("Lose");
 	}
 
