@@ -29,7 +29,11 @@ public class Ball : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D (Collision2D col) {
-		if (hasStarted && (col.gameObject.name.Equals("Paddle")) || (col.gameObject.name.Equals("Wall_Left"))||
+		PlayBounceSound (col);
+	}
+
+	void PlayBounceSound (Collision2D col) {
+		if (hasStarted && (col.gameObject.name.Equals("Padle")) || (col.gameObject.name.Equals("Wall_Left"))||
 			(col.gameObject.name.Equals("Wall_Right"))|| (col.gameObject.name.Equals("Wall_Top"))) {
 			AudioSource audio = GetComponent<AudioSource> ();
 			audio.Play ();
