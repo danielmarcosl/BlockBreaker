@@ -55,6 +55,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 429d6891900dd81458e6ce2d61d3b8b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crack: {fileID: 8300000, guid: 99dda2536437b0149ae38cfd2aaa1f8a, type: 3}
   hitSprites: []
 --- !u!212 &21236510
 SpriteRenderer:
@@ -118,6 +119,10 @@ Prefab:
       propertyPath: m_Color.r
       value: 0.85294116
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: crack
+      value: 
+      objectReference: {fileID: 8300000, guid: 99dda2536437b0149ae38cfd2aaa1f8a, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 187922}
