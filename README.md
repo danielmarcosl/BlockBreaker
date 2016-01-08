@@ -23,3 +23,8 @@ The player has to prevent that the ball fall, moving a paddle horizontally, atte
 ![alt win](./readme-images/win.jpg)
 ###Lose
 ![alt lose](./readme-images/lose.jpg)
+
+##Assets
+
+- The sounds were gathered from http://www.freesound.org/ with Creative Commons license.
+- The images were gathered from Google Images, labeled for reuse with modifications.
