@@ -6,6 +6,7 @@ public class Brick : MonoBehaviour {
 	public AudioClip crack;
 	public Sprite[] hitSprites;
 	public static int breakableCount = 0;
+	public GameObject smoke;
 
 	private int timesHit;
 	private LevelManager levelManager;
@@ -46,10 +47,17 @@ public class Brick : MonoBehaviour {
 			breakableCount -= 1;
 			levelManager.BrickDestroyed ();
 
+			puffSmoke ();
+
 			GameObject.Destroy (gameObject, 0.1f);
 		} else {
 			LoadSprites ();
 		}
+	}
+
+	void puffSmoke () {
+		GameObject smokePuff = Instantiate (smoke, transform.position, Quaternion.identity) as GameObject;
+		smokePuff.GetComponentInChildren<ParticleSystem>().startColor = gameObject.GetComponent<SpriteRenderer>().color;
 	}
 
 	void LoadSprites () {

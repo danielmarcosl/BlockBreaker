@@ -57,6 +57,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crack: {fileID: 8300000, guid: 99dda2536437b0149ae38cfd2aaa1f8a, type: 3}
   hitSprites: []
+  smoke: {fileID: 146078, guid: 9d39c99b4a8179d498f6a08987f71318, type: 2}
 --- !u!212 &21236510
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -115,6 +116,10 @@ Prefab:
       propertyPath: m_TagString
       value: Breakable
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: smoke
+      value: 
+      objectReference: {fileID: 146078, guid: 9d39c99b4a8179d498f6a08987f71318, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 187922}
