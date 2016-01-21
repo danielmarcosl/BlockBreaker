@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 9c6d823ca0d9ef84eaf6bc3712ee294d
-timeCreated: 1452202070
+timeCreated: 1453376521
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -9,6 +9,7 @@ TextureImporter:
     21300004: brick_right
     21300006: brick_full_1_hit
     21300008: brick_full_2_hit
+    21300010: padle
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -58,8 +59,8 @@ TextureImporter:
     - name: brick_full
       rect:
         serializedVersion: 2
-        x: 1
-        y: 129
+        x: 2
+        y: 168
         width: 128
         height: 41
       alignment: 0
@@ -73,8 +74,8 @@ TextureImporter:
     - name: brick_left
       rect:
         serializedVersion: 2
-        x: 0
-        y: 86
+        x: 1
+        y: 125
         width: 64
         height: 41
       alignment: 0
@@ -88,23 +89,23 @@ TextureImporter:
     - name: brick_right
       rect:
         serializedVersion: 2
-        x: 66
-        y: 86
-        width: 64
+        x: 67
+        y: 125
+        width: 63
         height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -32, y: 20.5}
-        - {x: -32, y: -20.5}
-        - {x: 32, y: -20.5}
-        - {x: 32, y: 20.5}
+      - - {x: -31.5, y: 20.5}
+        - {x: -31.5, y: -20.5}
+        - {x: 31.5, y: -20.5}
+        - {x: 31.5, y: 20.5}
     - name: brick_full_1_hit
       rect:
         serializedVersion: 2
-        x: 0
-        y: 43
+        x: 1
+        y: 82
         width: 128
         height: 41
       alignment: 0
@@ -118,8 +119,8 @@ TextureImporter:
     - name: brick_full_2_hit
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1
+        y: 39
         width: 128
         height: 41
       alignment: 0
@@ -130,6 +131,23 @@ TextureImporter:
         - {x: -64, y: -20.5}
         - {x: 64, y: -20.5}
         - {x: 64, y: 20.5}
+    - name: padle
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -51, y: 16}
+        - {x: -64, y: 10}
+        - {x: -64, y: -16}
+        - {x: 64, y: -16}
+        - {x: 64, y: 14}
+        - {x: 46, y: 16}
     outline: []
   spritePackingTag: 
   userData: 
