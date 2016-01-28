@@ -26,5 +26,5 @@ The player has to prevent that the ball fall, moving a paddle horizontally, atte
 
 ##Assets
 
-- The sounds were gathered from http://www.freesound.org/ with Creative Commons license.
+- The sounds were gathered from http://www.freesound.org/ with Creative Commons 0 license.
 - The images were gathered from Google Images, labeled for reuse with modifications.
